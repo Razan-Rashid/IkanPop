@@ -30,8 +30,22 @@
     header {
       background: var(--accent);
       color: white;
-      padding: 20px;
+      padding: 20px 20px 20px 80px;
+      position: relative;
       text-align: center;
+    }
+
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
     }
 
     .toggle-btn {
@@ -44,6 +58,17 @@
       padding: 5px 10px;
       cursor: pointer;
       border-radius: 5px;
+    }
+
+    .poster {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 1000px;
+    }
+
+    .poster img {
+      max-width: 100%;
+      border-radius: 10px;
     }
 
     .container {
@@ -120,9 +145,16 @@
 <body>
 
   <header>
+    <div class="logo">
+      <img src="logo.png" alt="IkanPop! Logo">
+    </div>
     <h1>IkanPop! - Student Special!</h1>
     <button class="toggle-btn" onclick="toggleDark()">🌙 Toggle</button>
   </header>
+
+  <div class="poster">
+    <img src="poster.jpeg" alt="IkanPop! Poster">
+  </div>
 
   <div class="container">
     <div class="product">
